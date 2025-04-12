@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 62 | Scripts: 8 | Modules: 0 | Tags: 0
+-- Instances: 69 | Scripts: 14 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
@@ -501,192 +501,227 @@ G2L["2c"]["Text"] = [[home]];
 G2L["2c"]["Position"] = UDim2.new(0.05289, 0, 0.01529, 0);
 
 
+-- StarterGui.ScreenGui.Frame.topBar.container.tabs.home.openHome
+G2L["2d"] = Instance.new("LocalScript", G2L["2c"]);
+G2L["2d"]["Name"] = [[openHome]];
+
+
 -- StarterGui.ScreenGui.Frame.topBar.container.tabs.universal
-G2L["2d"] = Instance.new("TextButton", G2L["2b"]);
-G2L["2d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d"]["TextSize"] = 14;
-G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2d"]["Size"] = UDim2.new(0, 132, 0, 59);
-G2L["2d"]["Name"] = [[universal]];
-G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2d"]["Text"] = [[universal]];
-G2L["2d"]["Position"] = UDim2.new(0.05289, 0, 0.18195, 0);
-
-
--- StarterGui.ScreenGui.Frame.topBar.container.tabs.credits
 G2L["2e"] = Instance.new("TextButton", G2L["2b"]);
 G2L["2e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["2e"]["TextSize"] = 14;
 G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["2e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["2e"]["Size"] = UDim2.new(0, 132, 0, 59);
-G2L["2e"]["Name"] = [[credits]];
+G2L["2e"]["Name"] = [[universal]];
 G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2e"]["Text"] = [[credits]];
-G2L["2e"]["Position"] = UDim2.new(0.05289, 0, 0.84155, 0);
+G2L["2e"]["Text"] = [[universal]];
+G2L["2e"]["Position"] = UDim2.new(0.05289, 0, 0.18195, 0);
 
 
--- StarterGui.ScreenGui.Frame.topBar.container.tabs.player
-G2L["2f"] = Instance.new("TextButton", G2L["2b"]);
-G2L["2f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2f"]["TextSize"] = 14;
-G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["2f"]["Size"] = UDim2.new(0, 132, 0, 59);
-G2L["2f"]["Name"] = [[player]];
-G2L["2f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2f"]["Text"] = [[player]];
-G2L["2f"]["Position"] = UDim2.new(0.05289, 0, 0.34507, 0);
+-- StarterGui.ScreenGui.Frame.topBar.container.tabs.universal.openUni
+G2L["2f"] = Instance.new("LocalScript", G2L["2e"]);
+G2L["2f"]["Name"] = [[openUni]];
 
 
--- StarterGui.ScreenGui.Frame.topBar.container.tabs.scripts
+-- StarterGui.ScreenGui.Frame.topBar.container.tabs.credits
 G2L["30"] = Instance.new("TextButton", G2L["2b"]);
 G2L["30"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["30"]["TextSize"] = 14;
 G2L["30"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["30"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["30"]["Size"] = UDim2.new(0, 132, 0, 59);
-G2L["30"]["Name"] = [[scripts]];
+G2L["30"]["Name"] = [[credits]];
 G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["30"]["Text"] = [[scripts]];
-G2L["30"]["Position"] = UDim2.new(0.05289, 0, 0.6742, 0);
+G2L["30"]["Text"] = [[credits]];
+G2L["30"]["Position"] = UDim2.new(0.05289, 0, 0.84155, 0);
+
+
+-- StarterGui.ScreenGui.Frame.topBar.container.tabs.credits.openCredits
+G2L["31"] = Instance.new("LocalScript", G2L["30"]);
+G2L["31"]["Name"] = [[openCredits]];
+
+
+-- StarterGui.ScreenGui.Frame.topBar.container.tabs.player
+G2L["32"] = Instance.new("TextButton", G2L["2b"]);
+G2L["32"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["32"]["TextSize"] = 14;
+G2L["32"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["32"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["32"]["Size"] = UDim2.new(0, 132, 0, 59);
+G2L["32"]["Name"] = [[player]];
+G2L["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["32"]["Text"] = [[player]];
+G2L["32"]["Position"] = UDim2.new(0.05289, 0, 0.34507, 0);
+
+
+-- StarterGui.ScreenGui.Frame.topBar.container.tabs.player.openPlayer
+G2L["33"] = Instance.new("LocalScript", G2L["32"]);
+G2L["33"]["Name"] = [[openPlayer]];
+
+
+-- StarterGui.ScreenGui.Frame.topBar.container.tabs.scripts
+G2L["34"] = Instance.new("TextButton", G2L["2b"]);
+G2L["34"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["TextSize"] = 14;
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["34"]["Size"] = UDim2.new(0, 132, 0, 59);
+G2L["34"]["Name"] = [[scripts]];
+G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["Text"] = [[scripts]];
+G2L["34"]["Position"] = UDim2.new(0.05289, 0, 0.6742, 0);
+
+
+-- StarterGui.ScreenGui.Frame.topBar.container.tabs.scripts.openScripts
+G2L["35"] = Instance.new("LocalScript", G2L["34"]);
+G2L["35"]["Name"] = [[openScripts]];
 
 
 -- StarterGui.ScreenGui.Frame.topBar.container.tabs.target
-G2L["31"] = Instance.new("TextButton", G2L["2b"]);
-G2L["31"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["31"]["TextSize"] = 14;
-G2L["31"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["31"]["Size"] = UDim2.new(0, 132, 0, 59);
-G2L["31"]["Name"] = [[target]];
-G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["31"]["Text"] = [[target]];
-G2L["31"]["Position"] = UDim2.new(0.05289, 0, 0.50819, 0);
+G2L["36"] = Instance.new("TextButton", G2L["2b"]);
+G2L["36"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["36"]["TextSize"] = 14;
+G2L["36"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["36"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["36"]["Size"] = UDim2.new(0, 132, 0, 59);
+G2L["36"]["Name"] = [[target]];
+G2L["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["36"]["Text"] = [[target]];
+G2L["36"]["Position"] = UDim2.new(0.05289, 0, 0.50819, 0);
+
+
+-- StarterGui.ScreenGui.Frame.topBar.container.tabs.target.openTarget
+G2L["37"] = Instance.new("LocalScript", G2L["36"]);
+G2L["37"]["Name"] = [[openTarget]];
 
 
 -- StarterGui.ScreenGui.Frame.topBar.close
-G2L["32"] = Instance.new("TextButton", G2L["3"]);
-G2L["32"]["BorderSizePixel"] = 0;
-G2L["32"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["32"]["TextSize"] = 24;
-G2L["32"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["32"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["32"]["Size"] = UDim2.new(0, 30, 0, 30);
-G2L["32"]["Name"] = [[close]];
-G2L["32"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["32"]["Text"] = [[x]];
-G2L["32"]["Position"] = UDim2.new(0.92609, 0, 0.13636, 0);
+G2L["38"] = Instance.new("TextButton", G2L["3"]);
+G2L["38"]["BorderSizePixel"] = 0;
+G2L["38"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38"]["TextSize"] = 24;
+G2L["38"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["38"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["38"]["Size"] = UDim2.new(0, 30, 0, 30);
+G2L["38"]["Name"] = [[close]];
+G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38"]["Text"] = [[x]];
+G2L["38"]["Position"] = UDim2.new(0.92609, 0, 0.13636, 0);
 
 
 -- StarterGui.ScreenGui.Frame.topBar.close.LocalScript
-G2L["33"] = Instance.new("LocalScript", G2L["32"]);
+G2L["39"] = Instance.new("LocalScript", G2L["38"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.topBar.minimize
-G2L["34"] = Instance.new("TextButton", G2L["3"]);
-G2L["34"]["BorderSizePixel"] = 0;
-G2L["34"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["34"]["TextSize"] = 24;
-G2L["34"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["34"]["Size"] = UDim2.new(0, 30, 0, 30);
-G2L["34"]["Name"] = [[minimize]];
-G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["34"]["Text"] = [[-]];
-G2L["34"]["Position"] = UDim2.new(0.86087, 0, 0.13636, 0);
+G2L["3a"] = Instance.new("TextButton", G2L["3"]);
+G2L["3a"]["BorderSizePixel"] = 0;
+G2L["3a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a"]["TextSize"] = 24;
+G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3a"]["Size"] = UDim2.new(0, 30, 0, 30);
+G2L["3a"]["Name"] = [[minimize]];
+G2L["3a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a"]["Text"] = [[-]];
+G2L["3a"]["Position"] = UDim2.new(0.86087, 0, 0.13636, 0);
 
 
 -- StarterGui.ScreenGui.Frame.topBar.minimize.LocalScript
-G2L["35"] = Instance.new("LocalScript", G2L["34"]);
+G2L["3b"] = Instance.new("LocalScript", G2L["3a"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.topBar.UIDragDetector
-G2L["36"] = Instance.new("UIDragDetector", G2L["3"]);
+G2L["3c"] = Instance.new("UIDragDetector", G2L["3"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.confirmClose
-G2L["37"] = Instance.new("Frame", G2L["2"]);
-G2L["37"]["Visible"] = false;
-G2L["37"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["37"]["Size"] = UDim2.new(0, 336, 0, 176);
-G2L["37"]["Position"] = UDim2.new(0.42461, 0, 0.04257, 0);
-G2L["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["37"]["Name"] = [[confirmClose]];
+G2L["3d"] = Instance.new("Frame", G2L["2"]);
+G2L["3d"]["Visible"] = false;
+G2L["3d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3d"]["Size"] = UDim2.new(0, 336, 0, 176);
+G2L["3d"]["Position"] = UDim2.new(0.42461, 0, 0.04257, 0);
+G2L["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3d"]["Name"] = [[confirmClose]];
 
 
 -- StarterGui.ScreenGui.Frame.confirmClose.prompt
-G2L["38"] = Instance.new("Frame", G2L["37"]);
-G2L["38"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["38"]["Size"] = UDim2.new(0, 286, 0, 93);
-G2L["38"]["Position"] = UDim2.new(0.06845, 0, 0.07109, 0);
-G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["38"]["Name"] = [[prompt]];
+G2L["3e"] = Instance.new("Frame", G2L["3d"]);
+G2L["3e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3e"]["Size"] = UDim2.new(0, 286, 0, 93);
+G2L["3e"]["Position"] = UDim2.new(0.06845, 0, 0.07109, 0);
+G2L["3e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3e"]["Name"] = [[prompt]];
 
 
 -- StarterGui.ScreenGui.Frame.confirmClose.prompt.TextLabel
-G2L["39"] = Instance.new("TextLabel", G2L["38"]);
-G2L["39"]["BorderSizePixel"] = 0;
-G2L["39"]["TextSize"] = 22;
-G2L["39"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["39"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["39"]["Size"] = UDim2.new(0, 244, 0, 25);
-G2L["39"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["39"]["Text"] = [[are you sure you want to close?]];
-G2L["39"]["Position"] = UDim2.new(0.08096, 0, 0.17755, 0);
+G2L["3f"] = Instance.new("TextLabel", G2L["3e"]);
+G2L["3f"]["BorderSizePixel"] = 0;
+G2L["3f"]["TextSize"] = 22;
+G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3f"]["Size"] = UDim2.new(0, 244, 0, 25);
+G2L["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3f"]["Text"] = [[are you sure you want to close?]];
+G2L["3f"]["Position"] = UDim2.new(0.08096, 0, 0.17755, 0);
 
 
 -- StarterGui.ScreenGui.Frame.confirmClose.prompt.TextLabel
-G2L["3a"] = Instance.new("TextLabel", G2L["38"]);
-G2L["3a"]["BorderSizePixel"] = 0;
-G2L["3a"]["TextSize"] = 18;
-G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["3a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3a"]["Size"] = UDim2.new(0, 244, 0, 25);
-G2L["3a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3a"]["Text"] = [[(you will have to re-execute)]];
-G2L["3a"]["Position"] = UDim2.new(0.08096, 0, 0.54314, 0);
+G2L["40"] = Instance.new("TextLabel", G2L["3e"]);
+G2L["40"]["BorderSizePixel"] = 0;
+G2L["40"]["TextSize"] = 18;
+G2L["40"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["40"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["40"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["40"]["Size"] = UDim2.new(0, 244, 0, 25);
+G2L["40"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["40"]["Text"] = [[(you will have to re-execute)]];
+G2L["40"]["Position"] = UDim2.new(0.08096, 0, 0.54314, 0);
 
 
 -- StarterGui.ScreenGui.Frame.confirmClose.prompt.yes
-G2L["3b"] = Instance.new("TextButton", G2L["38"]);
-G2L["3b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3b"]["TextSize"] = 24;
-G2L["3b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["3b"]["Size"] = UDim2.new(0, 140, 0, 50);
-G2L["3b"]["Name"] = [[yes]];
-G2L["3b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3b"]["Text"] = [[yes]];
-G2L["3b"]["Position"] = UDim2.new(0, 0, 1.08602, 0);
+G2L["41"] = Instance.new("TextButton", G2L["3e"]);
+G2L["41"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["41"]["TextSize"] = 24;
+G2L["41"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["41"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["41"]["Size"] = UDim2.new(0, 140, 0, 50);
+G2L["41"]["Name"] = [[yes]];
+G2L["41"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["41"]["Text"] = [[yes]];
+G2L["41"]["Position"] = UDim2.new(0, 0, 1.08602, 0);
 
 
 -- StarterGui.ScreenGui.Frame.confirmClose.prompt.yes.LocalScript
-G2L["3c"] = Instance.new("LocalScript", G2L["3b"]);
+G2L["42"] = Instance.new("LocalScript", G2L["41"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.confirmClose.prompt.no
-G2L["3d"] = Instance.new("TextButton", G2L["38"]);
-G2L["3d"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3d"]["TextSize"] = 24;
-G2L["3d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["3d"]["Size"] = UDim2.new(0, 140, 0, 50);
-G2L["3d"]["Name"] = [[no]];
-G2L["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3d"]["Text"] = [[no]];
-G2L["3d"]["Position"] = UDim2.new(0.51049, 0, 1.08602, 0);
+G2L["43"] = Instance.new("TextButton", G2L["3e"]);
+G2L["43"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["43"]["TextSize"] = 24;
+G2L["43"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["43"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["43"]["Size"] = UDim2.new(0, 140, 0, 50);
+G2L["43"]["Name"] = [[no]];
+G2L["43"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["43"]["Text"] = [[no]];
+G2L["43"]["Position"] = UDim2.new(0.51049, 0, 1.08602, 0);
 
 
 -- StarterGui.ScreenGui.Frame.confirmClose.prompt.no.LocalScript
-G2L["3e"] = Instance.new("LocalScript", G2L["3d"]);
+G2L["44"] = Instance.new("LocalScript", G2L["43"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.confirmClose.UIDragDetector
+G2L["45"] = Instance.new("UIDragDetector", G2L["3d"]);
 
 
 
@@ -814,9 +849,219 @@ local script = G2L["1c"];
 	
 end;
 task.spawn(C_1c);
--- StarterGui.ScreenGui.Frame.topBar.close.LocalScript
+-- StarterGui.ScreenGui.Frame.topBar.container.tabs.home.openHome
+local function C_2d()
+local script = G2L["2d"];
+	local button = script.Parent
+	local home = script.Parent.Parent.Parent.viewFrame:WaitForChild("home")
+	local universal = script.Parent.Parent.Parent.viewFrame:WaitForChild("universal")
+	local scripts = script.Parent.Parent.Parent.viewFrame:WaitForChild("scripts")
+	local player = script.Parent.Parent.Parent.viewFrame:WaitForChild("player")
+	local target = script.Parent.Parent.Parent.viewFrame:WaitForChild("target")
+	local credits = script.Parent.Parent.Parent.viewFrame:WaitForChild("credits")
+	
+	
+	local frames = {home, universal, scripts, player, target, credits} -- store all frames in a table
+	
+	-- Function to hide all frames
+	local function hideAllFrames()
+		for _, frame in ipairs(frames) do
+			frame.Visible = false
+		end
+	end
+	
+	-- Function to show a specific frame and hide others
+	local function showFrame(frameToShow)
+		hideAllFrames()
+		frameToShow.Visible = true
+	end
+	
+	-- Button click event
+	button.MouseButton1Click:Connect(function()
+		-- Show Frame2 and hide others as an example
+		showFrame(home)
+	end)
+	
+end;
+task.spawn(C_2d);
+-- StarterGui.ScreenGui.Frame.topBar.container.tabs.universal.openUni
+local function C_2f()
+local script = G2L["2f"];
+	local button = script.Parent
+	local home = script.Parent.Parent.Parent.viewFrame:WaitForChild("home")
+	local universal = script.Parent.Parent.Parent.viewFrame:WaitForChild("universal")
+	local scripts = script.Parent.Parent.Parent.viewFrame:WaitForChild("scripts")
+	local player = script.Parent.Parent.Parent.viewFrame:WaitForChild("player")
+	local target = script.Parent.Parent.Parent.viewFrame:WaitForChild("target")
+	local credits = script.Parent.Parent.Parent.viewFrame:WaitForChild("credits")
+	
+	
+	local frames = {home, universal, scripts, player, target, credits} -- store all frames in a table
+	
+	-- Function to hide all frames
+	local function hideAllFrames()
+		for _, frame in ipairs(frames) do
+			frame.Visible = false
+		end
+	end
+	
+	-- Function to show a specific frame and hide others
+	local function showFrame(frameToShow)
+		hideAllFrames()
+		frameToShow.Visible = true
+	end
+	
+	-- Button click event
+	button.MouseButton1Click:Connect(function()
+		-- Show Frame2 and hide others as an example
+		showFrame(universal)
+	end)
+	
+end;
+task.spawn(C_2f);
+-- StarterGui.ScreenGui.Frame.topBar.container.tabs.credits.openCredits
+local function C_31()
+local script = G2L["31"];
+	local button = script.Parent
+	local home = script.Parent.Parent.Parent.viewFrame:WaitForChild("home")
+	local universal = script.Parent.Parent.Parent.viewFrame:WaitForChild("universal")
+	local scripts = script.Parent.Parent.Parent.viewFrame:WaitForChild("scripts")
+	local player = script.Parent.Parent.Parent.viewFrame:WaitForChild("player")
+	local target = script.Parent.Parent.Parent.viewFrame:WaitForChild("target")
+	local credits = script.Parent.Parent.Parent.viewFrame:WaitForChild("credits")
+	
+	
+	local frames = {home, universal, scripts, player, target, credits} -- store all frames in a table
+	
+	-- Function to hide all frames
+	local function hideAllFrames()
+		for _, frame in ipairs(frames) do
+			frame.Visible = false
+		end
+	end
+	
+	-- Function to show a specific frame and hide others
+	local function showFrame(frameToShow)
+		hideAllFrames()
+		frameToShow.Visible = true
+	end
+	
+	-- Button click event
+	button.MouseButton1Click:Connect(function()
+		-- Show Frame2 and hide others as an example
+		showFrame(credits)
+	end)
+	
+end;
+task.spawn(C_31);
+-- StarterGui.ScreenGui.Frame.topBar.container.tabs.player.openPlayer
 local function C_33()
 local script = G2L["33"];
+	local button = script.Parent
+	local home = script.Parent.Parent.Parent.viewFrame:WaitForChild("home")
+	local universal = script.Parent.Parent.Parent.viewFrame:WaitForChild("universal")
+	local scripts = script.Parent.Parent.Parent.viewFrame:WaitForChild("scripts")
+	local player = script.Parent.Parent.Parent.viewFrame:WaitForChild("player")
+	local target = script.Parent.Parent.Parent.viewFrame:WaitForChild("target")
+	local credits = script.Parent.Parent.Parent.viewFrame:WaitForChild("credits")
+	
+	
+	local frames = {home, universal, scripts, player, target, credits} -- store all frames in a table
+	
+	-- Function to hide all frames
+	local function hideAllFrames()
+		for _, frame in ipairs(frames) do
+			frame.Visible = false
+		end
+	end
+	
+	-- Function to show a specific frame and hide others
+	local function showFrame(frameToShow)
+		hideAllFrames()
+		frameToShow.Visible = true
+	end
+	
+	-- Button click event
+	button.MouseButton1Click:Connect(function()
+		-- Show Frame2 and hide others as an example
+		showFrame(player)
+	end)
+	
+end;
+task.spawn(C_33);
+-- StarterGui.ScreenGui.Frame.topBar.container.tabs.scripts.openScripts
+local function C_35()
+local script = G2L["35"];
+	local button = script.Parent
+	local home = script.Parent.Parent.Parent.viewFrame:WaitForChild("home")
+	local universal = script.Parent.Parent.Parent.viewFrame:WaitForChild("universal")
+	local scripts = script.Parent.Parent.Parent.viewFrame:WaitForChild("scripts")
+	local player = script.Parent.Parent.Parent.viewFrame:WaitForChild("player")
+	local target = script.Parent.Parent.Parent.viewFrame:WaitForChild("target")
+	local credits = script.Parent.Parent.Parent.viewFrame:WaitForChild("credits")
+	
+	
+	local frames = {home, universal, scripts, player, target, credits} -- store all frames in a table
+	
+	-- Function to hide all frames
+	local function hideAllFrames()
+		for _, frame in ipairs(frames) do
+			frame.Visible = false
+		end
+	end
+	
+	-- Function to show a specific frame and hide others
+	local function showFrame(frameToShow)
+		hideAllFrames()
+		frameToShow.Visible = true
+	end
+	
+	-- Button click event
+	button.MouseButton1Click:Connect(function()
+		-- Show Frame2 and hide others as an example
+		showFrame(scripts)
+	end)
+	
+end;
+task.spawn(C_35);
+-- StarterGui.ScreenGui.Frame.topBar.container.tabs.target.openTarget
+local function C_37()
+local script = G2L["37"];
+	local button = script.Parent
+	local home = script.Parent.Parent.Parent.viewFrame:WaitForChild("home")
+	local universal = script.Parent.Parent.Parent.viewFrame:WaitForChild("universal")
+	local scripts = script.Parent.Parent.Parent.viewFrame:WaitForChild("scripts")
+	local player = script.Parent.Parent.Parent.viewFrame:WaitForChild("player")
+	local target = script.Parent.Parent.Parent.viewFrame:WaitForChild("target")
+	local credits = script.Parent.Parent.Parent.viewFrame:WaitForChild("credits")
+	
+	
+	local frames = {home, universal, scripts, player, target, credits} -- store all frames in a table
+	
+	-- Function to hide all frames
+	local function hideAllFrames()
+		for _, frame in ipairs(frames) do
+			frame.Visible = false
+		end
+	end
+	
+	-- Function to show a specific frame and hide others
+	local function showFrame(frameToShow)
+		hideAllFrames()
+		frameToShow.Visible = true
+	end
+	
+	-- Button click event
+	button.MouseButton1Click:Connect(function()
+		-- Show Frame2 and hide others as an example
+		showFrame(target)
+	end)
+	
+end;
+task.spawn(C_37);
+-- StarterGui.ScreenGui.Frame.topBar.close.LocalScript
+local function C_39()
+local script = G2L["39"];
 	local button = script.Parent
 	local targetGui = script.Parent.Parent.Parent:WaitForChild("confirmClose")
 	
@@ -825,10 +1070,10 @@ local script = G2L["33"];
 	end)
 	
 end;
-task.spawn(C_33);
+task.spawn(C_39);
 -- StarterGui.ScreenGui.Frame.topBar.minimize.LocalScript
-local function C_35()
-local script = G2L["35"];
+local function C_3b()
+local script = G2L["3b"];
 	local button = script.Parent
 	local frame = script.Parent.Parent:WaitForChild("container")
 	
@@ -837,10 +1082,10 @@ local script = G2L["35"];
 	end)
 	
 end;
-task.spawn(C_35);
+task.spawn(C_3b);
 -- StarterGui.ScreenGui.Frame.confirmClose.prompt.yes.LocalScript
-local function C_3c()
-local script = G2L["3c"];
+local function C_42()
+local script = G2L["42"];
 	local button = script.Parent
 	local screenGui = button:FindFirstAncestorOfClass("ScreenGui")
 	
@@ -851,10 +1096,10 @@ local script = G2L["3c"];
 	end)
 	
 end;
-task.spawn(C_3c);
+task.spawn(C_42);
 -- StarterGui.ScreenGui.Frame.confirmClose.prompt.no.LocalScript
-local function C_3e()
-local script = G2L["3e"];
+local function C_44()
+local script = G2L["44"];
 	local button = script.Parent
 	local targetGui = script.Parent.Parent.Parent.Parent:WaitForChild("confirmClose")
 	
@@ -863,6 +1108,6 @@ local script = G2L["3e"];
 	end)
 	
 end;
-task.spawn(C_3e);
+task.spawn(C_44);
 
 return G2L["1"], require;
