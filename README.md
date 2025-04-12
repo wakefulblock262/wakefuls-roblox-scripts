@@ -1,4 +1,4 @@
-just a gtihub to keep all of my scripts
+just a repo that has all of my scripts for roblox
 ---
 test script
 ```
