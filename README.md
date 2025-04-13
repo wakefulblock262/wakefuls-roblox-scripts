@@ -6,5 +6,5 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/wakefulblock262/wakef
 ```
 wakeful's universal hub (old)
 ```
-loadstring(game:HttpGet("https://raw.githubusercontent.com/wakefulblock262/wakefuls-roblox-scripts/main/wakefulsUniversalHub.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/wakefulblock262/wakefuls-roblox-scripts/main/oldWakefulsUniversalHub.lua"))()
 ```
