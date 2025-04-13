@@ -1095,11 +1095,11 @@ local script = G2L["4b"];
 	end)
 	
 	-- Toggle button click handler
-	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.esp.MouseButton1Click:Connect(function()
 		print("ESP button clicked") -- Debugging log
 	
 		espEnabled = not espEnabled
-		script.Parent.Text = espEnabled and "ESP: ON" or "ESP: OFF"
+		script.Parent.Text = espEnabled and "ESP | ON" or "ESP | OFF"
 	
 		if espEnabled then
 			-- Add ESP to all valid humanoid models in the workspace
