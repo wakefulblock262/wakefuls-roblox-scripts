@@ -1077,13 +1077,32 @@ local script = G2L["4b"];
 		end
 	end)
 	
+	-- Listen for new models (players or NPCs) being added to the workspace
+	workspace.DescendantAdded:Connect(function(descendant)
+		if not espEnabled then return end
+		if descendant:IsA("Model") then
+			local function tryAddESP()
+				local hrp = descendant:FindFirstChild("HumanoidRootPart")
+				local hum = descendant:FindFirstChildOfClass("Humanoid")
+				if hrp and hum and descendant ~= LocalPlayer.Character then
+					createESP(descendant)
+				end
+			end
+	
+			-- Wait a bit to ensure parts are loaded
+			task.delay(0.5, tryAddESP)
+		end
+	end)
+	
 	-- Toggle button click handler
-	script.Parent.ESPButton.MouseButton1Click:Connect(function()
+	script.Parent.MouseButton1Click:Connect(function()
+		print("ESP button clicked") -- Debugging log
+	
 		espEnabled = not espEnabled
-		script.Parent.ESPButton.Text = espEnabled and "ESP: ON" or "ESP: OFF"
+		script.Parent.Text = espEnabled and "ESP: ON" or "ESP: OFF"
 	
 		if espEnabled then
-			-- Loop all valid humanoid models (players and NPCs)
+			-- Add ESP to all valid humanoid models in the workspace
 			for _, model in ipairs(workspace:GetDescendants()) do
 				if model:IsA("Model") and model:FindFirstChild("HumanoidRootPart") and model:FindFirstChildOfClass("Humanoid") then
 					if model ~= LocalPlayer.Character then
@@ -1092,7 +1111,7 @@ local script = G2L["4b"];
 				end
 			end
 		else
-			-- Remove all ESPs
+			-- Remove ESP for all models
 			for model, _ in pairs(espBoxes) do
 				removeESP(model)
 			end
@@ -1112,23 +1131,6 @@ local script = G2L["4b"];
 	Players.PlayerRemoving:Connect(function(player)
 		if espBoxes[player.Character] then
 			removeESP(player.Character)
-		end
-	end)
-	
-	-- Listen for all new models being added to the workspace
-	workspace.DescendantAdded:Connect(function(descendant)
-		if not espEnabled then return end
-		if descendant:IsA("Model") then
-			local function tryAddESP()
-				local hrp = descendant:FindFirstChild("HumanoidRootPart")
-				local hum = descendant:FindFirstChildOfClass("Humanoid")
-				if hrp and hum and descendant ~= LocalPlayer.Character then
-					createESP(descendant)
-				end
-			end
-	
-			-- Wait a bit to ensure parts are loaded
-			task.delay(0.5, tryAddESP)
 		end
 	end)
 	
