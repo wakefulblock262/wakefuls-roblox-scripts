@@ -1,4 +1,7 @@
-just a repo that has all of my scripts for roblox
+Get Bubble Hub
+```
+https://github.com/wakefulblock262/bubble
+```
 ---
 # Main Scripts
 ### Wakeful's Universal Hub
